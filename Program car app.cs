@@ -57,6 +57,23 @@ namespace ücl
 
 
              }
+        static bool IsPalindrome(int km)
+{
+    string kmString = km.ToString();
+    char[] kmArray = kmString.ToCharArray();
+    Array.Reverse(kmArray);
+    string reversedKm = new string(kmArray);
+
+    if (kmString == reversedKm)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
           
     }
  
